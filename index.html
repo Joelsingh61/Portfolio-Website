@@ -1,0 +1,139 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We'll Be Back Soon</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            background: linear-gradient(
+                -45deg,
+                #0f172a,
+                #0ea5e9,
+                #1e293b,
+                #38bdf8
+            );
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass {
+            backdrop-filter: blur(20px);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .pulse-ring {
+            animation: pulseRing 2s infinite;
+        }
+
+        @keyframes pulseRing {
+            0% {
+                transform: scale(.8);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center px-6">
+
+    <div class="glass rounded-3xl p-10 md:p-14 text-center max-w-3xl shadow-2xl">
+
+        <div class="relative w-28 h-28 mx-auto mb-8">
+            <div class="absolute inset-0 rounded-full border-4 border-cyan-300 pulse-ring"></div>
+
+            <div class="float flex items-center justify-center w-28 h-28 rounded-full bg-cyan-500 shadow-xl">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     class="w-14 h-14 text-white"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke="currentColor">
+
+                    <path stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9.75 17L15 12l-5.25-5"/>
+                </svg>
+            </div>
+        </div>
+
+        <span class="px-4 py-2 rounded-full bg-cyan-500/20 text-cyan-100 text-sm font-medium">
+            🚀 Website Under Maintenance
+        </span>
+
+        <h1 class="text-5xl md:text-7xl font-black text-white mt-6 mb-4">
+            We'll Be Back
+            <span class="text-cyan-300">Soon</span>
+        </h1>
+
+        <p class="text-gray-200 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            We are currently improving our website to bring you a faster,
+            smarter and more engaging experience.
+            Thank you for your patience while we make things even better.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+
+            <button class="bg-cyan-500 hover:bg-cyan-400 transition-all duration-300 text-white px-8 py-4 rounded-xl font-semibold shadow-lg">
+                Notify Me
+            </button>
+
+            <button class="border border-white/20 hover:bg-white/10 transition-all duration-300 text-white px-8 py-4 rounded-xl font-semibold">
+                Contact Support
+            </button>
+
+        </div>
+
+        <div class="mt-12 grid grid-cols-3 gap-6">
+
+            <div>
+                <h3 class="text-3xl font-bold text-cyan-300">24/7</h3>
+                <p class="text-gray-300 text-sm">Monitoring</p>
+            </div>
+
+            <div>
+                <h3 class="text-3xl font-bold text-cyan-300">99.9%</h3>
+                <p class="text-gray-300 text-sm">Reliability</p>
+            </div>
+
+            <div>
+                <h3 class="text-3xl font-bold text-cyan-300">⚡</h3>
+                <p class="text-gray-300 text-sm">Performance</p>
+            </div>
+
+        </div>
+
+        <div class="mt-12 text-gray-400 text-sm">
+            © 2026 Your Company. All Rights Reserved.
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
