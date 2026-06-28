@@ -1,129 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Coming Soon</title>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-        body {
-            background: linear-gradient(
-                -45deg,
-                #0f172a,
-                #0ea5e9,
-                #1e293b,
-                #38bdf8
-            );
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
-
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .glass {
-            backdrop-filter: blur(20px);
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.15);
-        }
-
-        .float {
-            animation: float 4s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .pulse-ring {
-            animation: pulseRing 2s infinite;
-        }
-
-        @keyframes pulseRing {
-            0% {
-                transform: scale(.8);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(1.5);
-                opacity: 0;
-            }
-        }
-    </style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" id="meta-desc" />
+  <title id="page-title">Loading...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<body>
 
-<body class="min-h-screen flex items-center justify-center px-6">
+<!-- ── NAVBAR ── -->
+<nav>
+  <a href="#hero" class="nav-logo" id="nav-logo">M<span></span>H</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#" target="_blank" class="nav-cta" id="nav-resume">Resume ↗</a>
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
-    <div class="glass rounded-3xl p-10 md:p-14 text-center max-w-3xl shadow-2xl">
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#research" onclick="closeMenu()">Research</a>
+  <a href="#experience" onclick="closeMenu()">Experience</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#certifications" onclick="closeMenu()">Certifications</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#" target="_blank" id="mobile-resume">Resume ↗</a>
+</div>
 
-        <div class="relative w-28 h-28 mx-auto mb-8">
-            <div class="absolute inset-0 rounded-full border-4 border-cyan-300 pulse-ring"></div>
-
-            <div class="float flex items-center justify-center w-28 h-28 rounded-full bg-cyan-500 shadow-xl">
-                <span class="text-white text-3xl font-bold">👨‍💻</span>
-            </div>
-        </div>
-
-        <span class="px-4 py-2 rounded-full bg-cyan-500/20 text-cyan-100 text-sm font-medium">
-            🚧 Portfolio in Progress
-        </span>
-
-        <h1 class="text-5xl md:text-7xl font-black text-white mt-6 mb-4">
-            Building Something
-            <span class="text-cyan-300">Awesome</span>
-        </h1>
-
-        <p class="text-gray-200 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-            I'm currently crafting my portfolio to showcase my projects, skills, and experience.
-            Stay tuned for a clean, modern, and interactive experience.
-        </p>
-
-        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-
-            <a href="mailto:joelsingh75@gmail.com"
-               class="bg-cyan-500 hover:bg-cyan-400 transition-all duration-300 text-white px-8 py-4 rounded-xl font-semibold shadow-lg">
-                Get In Touch
-            </a>
-
-            <a href="https://github.com/Joelsingh61"
-               target="_blank"
-               class="border border-white/20 hover:bg-white/10 transition-all duration-300 text-white px-8 py-4 rounded-xl font-semibold">
-                View GitHub
-            </a>
-
-        </div>
-
-        <div class="mt-12 grid grid-cols-3 gap-6">
-
-            <div>
-                <h3 class="text-3xl font-bold text-cyan-300">Projects</h3>
-                <p class="text-gray-300 text-sm">Coming Soon</p>
-            </div>
-
-            <div>
-                <h3 class="text-3xl font-bold text-cyan-300">Skills</h3>
-                <p class="text-gray-300 text-sm">Showcased</p>
-            </div>
-
-            <div>
-                <h3 class="text-3xl font-bold text-cyan-300">⚡</h3>
-                <p class="text-gray-300 text-sm">Performance</p>
-            </div>
-
-        </div>
-
-        <div class="mt-12 text-gray-400 text-sm">
-            © 2026 Your Name. All Rights Reserved.
-        </div>
-
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-label" id="hero-label"></p>
+      <h1 id="hero-name"></h1>
+      <div class="hero-title-sub">
+        <span id="typed-text"></span><span class="cursor"></span>
+      </div>
+      <p class="hero-desc" id="hero-desc"></p>
+      <div class="hero-stats" id="hero-stats"></div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><i class="fas fa-code"></i> View Projects</a>
+        <a href="#contact" class="btn-ghost"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+      </div>
     </div>
+    <div class="hero-card">
+      <img class="hero-avatar" id="hero-avatar" src="assets/img/profile.jpg" alt="" />
+      <h3 id="hero-card-name"></h3>
+      <div class="card-role" id="hero-card-role"></div>
+      <div class="hero-badges" id="hero-badges"></div>
+      <div class="hero-socials" id="hero-socials"></div>
+    </div>
+  </div>
+</section>
 
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-inner">
+    <p class="section-label">Who I Am</p>
+    <h2>About <em>Me</em></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p id="about-bio1"></p>
+        <p id="about-bio2"></p>
+        <div class="about-details" id="about-details"></div>
+      </div>
+      <div class="about-interests" id="about-interests"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RESEARCH ── -->
+<section id="research">
+  <div class="section-inner">
+    <p class="section-label">Publications</p>
+    <h2>IEEE <em>Research</em></h2>
+    <div class="research-grid" id="research-grid"></div>
+    <br/>
+    <a href="#" target="_blank" class="btn-ghost" id="ieee-profile-link" style="display:inline-flex;align-items:center;gap:.5rem;margin-top:.5rem;">
+      <i class="fas fa-external-link-alt"></i> View IEEE Author Profile
+    </a>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="section-inner">
+    <p class="section-label">Work & Leadership</p>
+    <h2>My <em>Experience</em></h2>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-inner">
+    <p class="section-label">What I've Built</p>
+    <h2>Featured <em>Projects</em></h2>
+    <div class="projects-grid" id="projects-grid"></div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications">
+  <div class="section-inner">
+    <p class="section-label">Credentials</p>
+    <h2>Certifi<em>cations</em></h2>
+    <div class="cert-grid" id="cert-grid"></div>
+  </div>
+</section>
+
+<!-- ── AWARDS ── -->
+<section id="awards">
+  <div class="section-inner">
+    <p class="section-label">Recognition</p>
+    <h2>Awards & <em>Achievements</em></h2>
+    <div class="awards-grid" id="awards-grid"></div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-inner">
+    <p class="section-label">Tech Stack</p>
+    <h2>Skills & <em>Tools</em></h2>
+    <div class="skills-grid" id="skills-grid"></div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education">
+  <div class="section-inner">
+    <p class="section-label">Academic Background</p>
+    <h2>Edu<em>cation</em></h2>
+    <div class="edu-card" id="edu-card"></div>
+  </div>
+</section>
+
+<!-- ── ONLINE WORKS ── -->
+<section id="online-works">
+  <div class="section-inner">
+    <p class="section-label">Continuous Learning</p>
+    <h2>Online <em>Works</em></h2>
+    <div class="online-grid" id="online-grid"></div>
+  </div>
+</section>
+
+<!-- ── LINKS ── -->
+<section id="links">
+  <div class="section-inner">
+    <p class="section-label">Find Me Online</p>
+    <h2>Important <em>Links</em></h2>
+    <div class="links-grid" id="links-grid"></div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label">Get In Touch</p>
+    <h2>Say <em>Hello</em></h2>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <p id="contact-intro"></p>
+        <div class="contact-items" id="contact-items"></div>
+      </div>
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand" id="footer-brand">M<span></span>H</div>
+    <span class="footer-copy" id="footer-copy"></span>
+    <div class="footer-socials" id="footer-socials"></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+// ═══════════════════════════════════════════
+//  PORTFOLIO RENDERER — reads portfolio-data.json
+// ═══════════════════════════════════════════
+
+let PHRASES = [];
+
+function showLoadError(msg) {
+  const b = document.createElement('div');
+  b.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#1a0a0a;color:#ff6b6b;font-family:monospace;font-size:14px;padding:14px 20px;border-bottom:2px solid #ff3333;display:flex;align-items:center;gap:12px';
+  b.innerHTML = '<span style="font-size:18px">⚠️</span><span>' + msg + '</span>';
+  document.body.prepend(b);
+}
+
+async function initPortfolio() {
+  let data;
+  try {
+    const res = await fetch('portfolio-data.json', {
+      cache: 'no-store',
+      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    data = await res.json();
+  } catch(e) {
+    console.error('Could not load portfolio-data.json:', e);
+    showLoadError('Could not load portfolio-data.json — open this page via a local server (python3 -m http.server 8080), not by double-clicking the file.');
+    return;
+  }
+
+  renderMeta(data);
+  renderNav(data);
+  renderHero(data.hero);
+  renderAbout(data.about);
+  renderResearch(data.research, data.hero);
+  renderExperience(data.experience);
+  renderProjects(data.projects);
+  renderCertifications(data.certifications);
+  renderAwards(data.awards);
+  renderSkills(data.skills);
+  renderEducation(data.education);
+  renderOnlineWorks(data.onlineWorks);
+  renderLinks(data.links);
+  renderContact(data.contact);
+  renderFooter(data);
+
+  // Kick off typed text after data loads
+  PHRASES = data.hero.typedPhrases || [];
+  typeLoop();
+
+  // Scroll reveal — must run AFTER content is injected into DOM
+  if (typeof initScrollReveal === 'function') initScrollReveal();
+}
+
+// ── META ──
+function renderMeta(data) {
+  const h = data.hero;
+  document.getElementById('page-title').textContent = (h.name || 'Portfolio') + ' — Developer & Researcher';
+  document.getElementById('meta-desc').setAttribute('content', h.name + ' — ' + h.description);
+}
+
+// ── NAV ──
+function renderNav(data) {
+  const h = data.hero;
+  const logo = document.getElementById('nav-logo');
+  const initials = data.meta?.navInitials || (h.name ? h.name.split(' ').map(w=>w[0]).join('') : 'MH');
+  logo.innerHTML = initials[0] + '<span></span>' + (initials[1] || '');
+  const resumeUrl = h.resumeLink || '#';
+  document.getElementById('nav-resume').href = resumeUrl;
+  document.getElementById('mobile-resume').href = resumeUrl;
+}
+
+// ── HERO ──
+function renderHero(h) {
+  if (!h) return;
+  setText('hero-label', h.label);
+  setText('hero-name', h.name);
+  setText('hero-desc', h.description);
+  setText('hero-card-name', h.name);
+  setText('hero-card-role', h.cardRole || 'Developer · Researcher');
+
+  const avatar = document.getElementById('hero-avatar');
+  avatar.src = h.profilePhoto || 'assets/img/profile.jpg';
+  avatar.alt = h.name;
+
+  // Stats
+  const statsEl = document.getElementById('hero-stats');
+  statsEl.innerHTML = (h.stats || []).map(s => `
+    <div class="stat">
+      <div class="stat-num">${esc(s.num)}<span>${esc(s.suffix||'')}</span></div>
+      <div class="stat-label">${esc(s.label)}</div>
+    </div>`).join('');
+
+  // Badge chips
+  const badgeColors = ['badge-aws','badge-cloud','badge-ieee','badge-research'];
+  document.getElementById('hero-badges').innerHTML = (h.badges || []).map((b,i) =>
+    `<span class="badge ${badgeColors[i % badgeColors.length]}">${esc(b)}</span>`).join('');
+
+  // Socials
+  const socials = h.socials || {};
+  const socialItems = [
+    { key:'linkedin', icon:'fab fa-linkedin-in', label:'LinkedIn' },
+    { key:'github',   icon:'fab fa-github',      label:'GitHub'   },
+    { key:'email',    icon:'fas fa-envelope',     label:'Email', mailto:true },
+    { key:'scholar',  icon:'fas fa-graduation-cap', label:'Google Scholar' },
+    { key:'orcid',    icon:'fas fa-id-card',      label:'ORCID'   },
+  ];
+  document.getElementById('hero-socials').innerHTML = socialItems
+    .filter(s => socials[s.key])
+    .map(s => {
+      const href = s.mailto ? `mailto:${socials[s.key]}` : socials[s.key];
+      return `<a href="${esc(href)}" target="_blank" class="social-btn" aria-label="${s.label}"><i class="${s.icon}"></i></a>`;
+    }).join('');
+}
+
+// ── ABOUT ──
+function renderAbout(a) {
+  if (!a) return;
+  setText('about-bio1', a.bio1);
+  setText('about-bio2', a.bio2);
+
+  const d = a.details || {};
+  document.getElementById('about-details').innerHTML = `
+    ${d.birthday ? `<div class="detail-item"><span class="detail-label">Birthday</span><span class="detail-value">${esc(d.birthday)}</span></div>` : ''}
+    ${d.location ? `<div class="detail-item"><span class="detail-label">Location</span><span class="detail-value">${esc(d.location)}</span></div>` : ''}
+    ${d.email    ? `<div class="detail-item"><span class="detail-label">Email</span><span class="detail-value"><a href="mailto:${esc(d.email)}">${esc(d.email)}</a></span></div>` : ''}
+    ${d.phone    ? `<div class="detail-item"><span class="detail-label">Phone</span><span class="detail-value">${esc(d.phone)}</span></div>` : ''}
+    ${d.orcid    ? `<div class="detail-item"><span class="detail-label">ORCID</span><span class="detail-value"><a href="https://orcid.org/${esc(d.orcid)}" target="_blank">${esc(d.orcid)}</a></span></div>` : ''}
+    ${d.researchgate ? `<div class="detail-item"><span class="detail-label">ResearchGate</span><span class="detail-value"><a href="${esc(d.researchgate)}" target="_blank">View Profile</a></span></div>` : ''}
+  `;
+
+  const interestIcons = {
+    'Software Development':'fas fa-code','Cloud Computing':'fas fa-cloud',
+    'Virtual Reality':'fas fa-vr-cardboard','Game Designing':'fas fa-gamepad',
+    'Data Visualization':'fas fa-chart-line','Algorithms & AI':'fas fa-brain',
+    'Event Management':'fas fa-calendar-check','Cloud Applications':'fas fa-cloud-upload-alt'
+  };
+  document.getElementById('about-interests').innerHTML = (a.interests || Object.keys(interestIcons)).map(name => `
+    <div class="interest-item">
+      <div class="interest-icon"><i class="${interestIcons[name] || 'fas fa-star'}"></i></div>
+      <span class="interest-name">${esc(name)}</span>
+    </div>`).join('');
+}
+
+// ── RESEARCH ──
+function renderResearch(research, hero) {
+  document.getElementById('research-grid').innerHTML = (research || []).map(r => `
+    <div class="research-card">
+      <span class="research-badge"><i class="fas fa-file-alt"></i> IEEE Xplore · ${esc(r.year)}</span>
+      <h3>${esc(r.title)}</h3>
+      <a href="${esc(r.link)}" target="_blank" class="research-link">Read Paper <i class="fas fa-arrow-right"></i></a>
+    </div>`).join('');
+
+  const ieeeLink = hero?.socials?.ieeeProfile || 'https://ieeexplore.ieee.org/';
+  document.getElementById('ieee-profile-link').href = ieeeLink;
+}
+
+// ── EXPERIENCE ──
+function renderExperience(experience) {
+  document.getElementById('timeline').innerHTML = (experience || []).map(e => `
+    <div class="timeline-item">
+      <div class="timeline-dot"><i class="${esc(e.icon || 'fas fa-briefcase')}"></i></div>
+      <div class="timeline-content">
+        <div class="timeline-head">
+          <div class="timeline-org"><a href="${esc(e.orgLink || '#')}" target="_blank">${esc(e.org)}</a></div>
+          <span class="timeline-period">${esc(e.period)}</span>
+        </div>
+        <div class="timeline-role">${esc(e.role)}</div>
+        <ul>${(e.bullets || []).map(b => `<li>${esc(b)}</li>`).join('')}</ul>
+      </div>
+    </div>`).join('');
+}
+
+// ── PROJECTS ──
+function renderProjects(projects) {
+  document.getElementById('projects-grid').innerHTML = (projects || []).map(p => `
+    <div class="project-card">
+      <div class="project-img">
+        <img src="${esc(p.img)}" alt="${esc(p.title)}" loading="lazy" />
+      </div>
+      <div class="project-body">
+        <div class="project-tags">${(p.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+        <h3>${esc(p.title)}</h3>
+        <p class="project-desc">${esc(p.desc)}</p>
+        <a href="${esc(p.link)}" target="_blank" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>`).join('');
+}
+
+// ── CERTIFICATIONS ──
+function renderCertifications(certs) {
+  document.getElementById('cert-grid').innerHTML = (certs || []).map(c => `
+    <a href="${esc(c.link)}" target="_blank" class="cert-card">
+      <div class="cert-logo"><img src="${esc(c.img)}" alt="${esc(c.issuer)}" /></div>
+      <div class="cert-info">
+        <div class="cert-name">${esc(c.name)}</div>
+        <div class="cert-issuer">${esc(c.issuer)}</div>
+      </div>
+    </a>`).join('');
+}
+
+// ── AWARDS ──
+function renderAwards(awards) {
+  document.getElementById('awards-grid').innerHTML = (awards || []).map(a => `
+    <a href="${esc(a.link)}" target="_blank" class="award-card">
+      <div class="award-icon">${a.icon}</div>
+      <div class="award-title">${esc(a.title)}</div>
+    </a>`).join('');
+}
+
+// ── SKILLS ──
+function renderSkills(skills) {
+  document.getElementById('skills-grid').innerHTML = (skills || []).map(cat => `
+    <div class="skill-category">
+      <h3>${esc(cat.category)}</h3>
+      <div class="skill-items">
+        ${(cat.items || []).map(item => `
+          <div class="skill-chip">
+            ${item.icon ? `<img src="${esc(item.icon)}" alt="${esc(item.name)}" />` : ''}
+            ${esc(item.name)}
+          </div>`).join('')}
+      </div>
+    </div>`).join('');
+}
+
+// ── EDUCATION ──
+function renderEducation(edu) {
+  if (!edu) return;
+  document.getElementById('edu-card').innerHTML = `
+    <div class="edu-logo">
+      <img src="${esc(edu.logoImg || 'assets/img/education/srm.png')}" alt="${esc(edu.institution)}" />
+    </div>
+    <div class="edu-info">
+      <h3><a href="${esc(edu.institutionLink || '#')}" target="_blank" style="color:inherit;text-decoration:none;">${esc(edu.institution)}</a></h3>
+      <div class="edu-degree">${esc(edu.degree)}</div>
+      <div class="edu-period">${esc(edu.period)}</div>
+      <div class="edu-courses">
+        ${(edu.courses || []).map(c => `<span class="tag">${esc(c)}</span>`).join('')}
+      </div>
+    </div>`;
+}
+
+// ── ONLINE WORKS ──
+function renderOnlineWorks(works) {
+  document.getElementById('online-grid').innerHTML = (works || []).map(w => `
+    <a href="${esc(w.link)}" target="_blank" class="online-card">
+      <div class="online-logo"><img src="${esc(w.img)}" alt="${esc(w.type)}" /></div>
+      <div class="online-info">
+        <h4>${esc(w.title)}</h4>
+        <div class="online-type">${esc(w.type)}</div>
+      </div>
+    </a>`).join('');
+}
+
+// ── LINKS ──
+function renderLinks(links) {
+  document.getElementById('links-grid').innerHTML = (links || []).map(l => `
+    <a href="${esc(l.url)}" target="_blank" class="link-card">
+      <div class="link-icon"><i class="${esc(l.icon)}"></i></div>
+      <div>
+        <h4>${esc(l.title)}</h4>
+        <div class="link-desc">${esc(l.desc)}</div>
+      </div>
+    </a>`).join('');
+}
+
+// ── CONTACT ──
+function renderContact(c) {
+  if (!c) return;
+  setText('contact-intro', c.intro);
+  document.getElementById('contact-items').innerHTML = `
+    ${c.location ? `<div class="contact-item"><div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-item-text"><span class="contact-item-label">Location</span><span class="contact-item-value">${esc(c.location)}</span></div></div>` : ''}
+    ${c.email    ? `<div class="contact-item"><div class="contact-item-icon"><i class="fas fa-envelope"></i></div><div class="contact-item-text"><span class="contact-item-label">Primary Email</span><span class="contact-item-value"><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></span></div></div>` : ''}
+    ${c.altEmail ? `<div class="contact-item"><div class="contact-item-icon"><i class="fas fa-envelope-open"></i></div><div class="contact-item-text"><span class="contact-item-label">Alt Email</span><span class="contact-item-value"><a href="mailto:${esc(c.altEmail)}">${esc(c.altEmail)}</a></span></div></div>` : ''}
+    ${c.phone    ? `<div class="contact-item"><div class="contact-item-icon"><i class="fas fa-phone"></i></div><div class="contact-item-text"><span class="contact-item-label">Phone</span><span class="contact-item-value">${esc(c.phone)}</span></div></div>` : ''}
+    ${c.linkedin ? `<div class="contact-item"><div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div><div class="contact-item-text"><span class="contact-item-label">LinkedIn</span><span class="contact-item-value"><a href="${esc(c.linkedin)}" target="_blank">${esc(c.linkedin.replace('https://www.','').replace('https://',''))}</a></span></div></div>` : ''}
+  `;
+}
+
+// ── FOOTER ──
+function renderFooter(data) {
+  const h = data.hero || {};
+  const meta = data.meta || {};
+  const initials = meta.navInitials || (h.name ? h.name.split(' ').map(w=>w[0]).join('') : 'MH');
+  document.getElementById('footer-brand').innerHTML = initials[0] + '<span></span>' + (initials[1] || '');
+
+  const year = meta.copyrightYear || new Date().getFullYear();
+  const name = h.name || '';
+  document.getElementById('footer-copy').textContent = `© ${year} ${name}. All rights reserved.`;
+
+  const socials = h.socials || {};
+  document.getElementById('footer-socials').innerHTML = [
+    socials.linkedin ? `<a href="${esc(socials.linkedin)}" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>` : '',
+    socials.github   ? `<a href="${esc(socials.github)}" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>` : '',
+    socials.email    ? `<a href="mailto:${esc(socials.email)}" class="social-btn"><i class="fas fa-envelope"></i></a>` : '',
+  ].join('');
+}
+
+// ── CONTACT FORM ──
+function handleFormSubmit(e) {
+  e.preventDefault();
+  const name    = document.getElementById('name').value;
+  const email   = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value || 'Portfolio Contact';
+  const message = document.getElementById('message').value;
+  window.location.href = `mailto:madheshh.official@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+}
+
+// ── UTILS ──
+function setText(id, val) { const el = document.getElementById(id); if (el) el.textContent = val || ''; }
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = String(s || '');
+  return d.innerHTML;
+}
+
+// ── TYPED TEXT ──
+let phraseIndex = 0, charIndex = 0, isDeleting = false;
+function typeLoop() {
+  if (!PHRASES.length) return;
+  const el = document.getElementById('typed-text');
+  if (!el) return;
+  const current = PHRASES[phraseIndex];
+  if (isDeleting) {
+    el.textContent = current.substring(0, charIndex--);
+    if (charIndex < 0) { isDeleting = false; phraseIndex = (phraseIndex + 1) % PHRASES.length; setTimeout(typeLoop, 500); return; }
+  } else {
+    el.textContent = current.substring(0, charIndex++);
+    if (charIndex > current.length) { isDeleting = true; setTimeout(typeLoop, 1800); return; }
+  }
+  setTimeout(typeLoop, isDeleting ? 60 : 100);
+}
+
+// Boot — wait for DOM before rendering
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPortfolio);
+} else {
+  initPortfolio();
+}
+</script>
 </body>
 </html>
