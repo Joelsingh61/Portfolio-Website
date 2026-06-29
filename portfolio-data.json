@@ -4,7 +4,7 @@
     "label": "Based in Chennai, India",
     "description": "Focused and enthusiastic developer with a keen interest in software development and cloud technology. Published researcher with multiple IEEE papers. Building things that matter.",
     "profilePhoto": "assets/img/profile.jpg",
-    "cardRole": "Developer \u00b7 Researcher",
+    "cardRole": "Developer · Researcher",
     "resumeLink": "https://drive.google.com/file/d/1HKhJ5_yHlJepoMQEomijM1JlhXFPa7E8/view?usp=sharing",
     "typedPhrases": [
       "Software Developer",
@@ -42,7 +42,7 @@
       "5x+ IEEE Author"
     ],
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/madheshh",
+      "": "https://www..com/in/madheshh",
       "github": "https://www.github.com/madddx",
       "email": "madheshh.official@gmail.com",
       "scholar": "https://scholar.google.com/citations?user=IX36AoYAAAAJ&hl=en",
@@ -51,7 +51,7 @@
     }
   },
   "about": {
-    "bio1": "I'm a B.Tech Computer Science Engineering student at SRM University, Chennai. My passion lies at the intersection of software development, cloud computing, and research \u2014 building systems that solve real-world problems with elegant engineering.",
+    "bio1": "I'm a B.Tech Computer Science Engineering student at SRM University, Chennai. My passion lies at the intersection of software development, cloud computing, and research — building systems that solve real-world problems with elegant engineering.",
     "bio2": "As the Ex-Chairperson of the IEEE GRSS Chapter at SRMIST, I've had the privilege of leading technical events, mentoring peers, and fostering a culture of innovation. My work spans from IoT systems and cloud architectures to game development and missile guidance simulations.",
     "interests": [
       "Software Development",
@@ -91,10 +91,10 @@
   ],
   "experience": [
     {
-      "org": "IEEE GRSS \u2014 SRMIST",
+      "org": "IEEE GRSS — SRMIST",
       "orgLink": "https://ieee-grss-srmist.vercel.app/",
       "role": "Chair Person",
-      "period": "Jan 2025 \u2014 Apr 2026",
+      "period": "Jan 2025 — Apr 2026",
       "icon": "fas fa-users",
       "bullets": [
         "Led multiple technical events including workshops, hackathons, industry visits, and research conferences with a diverse audience of students and professionals.",
@@ -104,9 +104,9 @@
     },
     {
       "org": "Google Cloud Skills",
-      "orgLink": "https://www.linkedin.com/posts/madheshh_googlecloud-cloudchampion-techinnovation-activity-7312386385095626752-Yviy",
-      "role": "Cohort Member \u00b7 Champion",
-      "period": "Jul 2024 \u2014 Dec 2025",
+      "orgLink": "https://www..com/posts/madheshh_googlecloud-cloudchampion-techinnovation-activity-7312386385095626752-Yviy",
+      "role": "Cohort Member · Champion",
+      "period": "Jul 2024 — Dec 2025",
       "icon": "fab fa-google",
       "bullets": [
         "Earned recognition for mastering cloud solutions including security, DevOps, AI/ML, and cloud-native applications.",
@@ -115,10 +115,10 @@
       ]
     },
     {
-      "org": "CINTEL Association \u2014 SRMIST",
+      "org": "CINTEL Association — SRMIST",
       "orgLink": "https://www.srmist.edu.in/department/department-of-computational-intelligence/cintel-student-association/",
       "role": "Technical & PR Member",
-      "period": "Aug 2024 \u2014 Mar 2025",
+      "period": "Aug 2024 — Mar 2025",
       "icon": "fas fa-laptop-code",
       "bullets": [
         "Received a Letter of Appreciation for contributions and dedication to events conducted between Aug 2024 and Jan 2025.",
@@ -156,7 +156,7 @@
         "C#",
         "Game Dev"
       ],
-      "title": "2D Dodge It \u2014 Unity Engine",
+      "title": "2D Dodge It — Unity Engine",
       "desc": "An engaging 2D dodge-style game built in Unity Engine. Demonstrates physics, game logic, and interactive level design concepts.",
       "link": "https://github.com/madddx/2D-Game-Dodge-It/blob/main/README.md"
     },
@@ -189,7 +189,7 @@
         "IoT",
         "Autonomous"
       ],
-      "title": "ARAMC: Autonomous Rover \u2014 Dual Controls",
+      "title": "ARAMC: Autonomous Rover — Dual Controls",
       "desc": "An autonomous rover with both automatic and manual control modes. Implements computer vision and manual override capabilities.",
       "link": "https://github.com/madddx/ARAMC-Autonomous-Rover-with-Automatic-and-Manual-Controls/blob/main/README.md"
     },
@@ -243,9 +243,9 @@
     },
     {
       "img": "assets/img/certification/github-foundations.png",
-      "name": "GitHub Foundations Certification",
-      "issuer": "GitHub",
-      "link": "Certifications/Github_Foundation.html"
+      "name": " Foundations Certification",
+      "issuer": "",
+      "link": "Certifications/_Foundation.html"
     },
     {
       "img": "assets/img/certification/fortinet-certified-associate-cybersecurity.png",
@@ -274,28 +274,28 @@
   ],
   "awards": [
     {
-      "icon": "\ud83c\udfc6",
-      "title": "Java Expo'24 \u2014 Winner",
-      "link": "https://www.linkedin.com/posts/madheshh_javaexpo2024-bestprojectaward-srmist-activity-7444112320450191360-TerI"
+      "icon": "🏆",
+      "title": "Java Expo'24 — Winner",
+      "link": "https://www..com/posts/madheshh_javaexpo2024-bestprojectaward-srmist-activity-7444112320450191360-TerI"
     },
     {
-      "icon": "\ud83e\udd47",
-      "title": "Sense Actuate'25 \u2014 Best Project",
-      "link": "https://www.linkedin.com/posts/madheshh_iot-smartsystems-srmist-activity-7326984265081016321-cJJO"
+      "icon": "🥇",
+      "title": "Sense Actuate'25 — Best Project",
+      "link": "https://www..com/posts/madheshh_iot-smartsystems-srmist-activity-7326984265081016321-cJJO"
     },
     {
-      "icon": "\ud83c\udfa8",
-      "title": "Creative Ingenuity'24 \u2014 2nd Runner up",
-      "link": "https://www.linkedin.com/posts/madheshh_engineeringgraphics-autocad-mechanicalengineering-activity-7208869672073457664-Oyny"
+      "icon": "🎨",
+      "title": "Creative Ingenuity'24 — 2nd Runner up",
+      "link": "https://www..com/posts/madheshh_engineeringgraphics-autocad-mechanicalengineering-activity-7208869672073457664-Oyny"
     },
     {
-      "icon": "\u2601\ufe0f",
+      "icon": "☁️",
       "title": "Google Cloud Champion Milestone",
-      "link": "https://www.linkedin.com/posts/madheshh_googlecloud-cloudjourney-techgrowth-activity-7401895943089917952-pmOp"
+      "link": "https://www..com/posts/madheshh_googlecloud-cloudjourney-techgrowth-activity-7401895943089917952-pmOp"
     },
     {
-      "icon": "\ud83d\udca1",
-      "title": "Hack For Humanity \u2014 1st Runner Up",
+      "icon": "💡",
+      "title": "Hack For Humanity — 1st Runner Up",
       "link": "https://drive.google.com/file/d/1gZeLD8ltKWPb-cc-vFJuq7hIYcfNB5yo/view?usp=drive_link"
     }
   ],
@@ -379,8 +379,8 @@
   "education": {
     "institution": "SRM Institute of Science & Technology",
     "institutionLink": "https://www.srmist.edu.in/",
-    "degree": "B.Tech \u2014 Computer Science Engineering",
-    "period": "August 2023 \u2014 Present",
+    "degree": "B.Tech — Computer Science Engineering",
+    "period": "August 2023 — Present",
     "logoImg": "assets/img/education/srm.png",
     "courses": [
       "Data Structures & Algorithms",
@@ -393,7 +393,7 @@
     {
       "img": "assets/img/education/google.png",
       "title": "Data Analytics",
-      "type": "Google \u00b7 Coursera",
+      "type": "Google · Coursera",
       "link": "https://www.coursera.org/account/accomplishments/professional-cert/DQDTR4W3T8AX"
     },
     {
@@ -454,15 +454,15 @@
     },
     {
       "icon": "fab fa-github",
-      "title": "GitHub",
+      "title": "",
       "desc": "My repositories",
       "url": "https://github.com/madddx"
     },
     {
-      "icon": "fab fa-linkedin-in",
-      "title": "LinkedIn",
+      "icon": "fab fa--in",
+      "title": "",
       "desc": "Connect with me",
-      "url": "https://www.linkedin.com/in/madheshh/"
+      "url": "https://www..com/in/madheshh/"
     },
     {
       "icon": "fab fa-google",
@@ -501,14 +501,11 @@
     "email": "madheshh.official@gmail.com",
     "altEmail": "madhesh090725@gmail.com",
     "phone": "+91 98409 12915",
-    "linkedin": "https://www.linkedin.com/in/madheshh"
+    "": "https://www..com/in/madheshh"
   },
   "meta": {
     "navInitials": "MH",
     "copyrightYear": "2025",
     "ieeeProfileUrl": "https://ieeexplore.ieee.org/author/985533095720725"
-  },
-  "name": "Joel Singh",
-  "title": "Robotics & Automation Engineer",
-  "headline": "ROS2 | AI | Computer Vision | Embedded Systems"
+  }
 }

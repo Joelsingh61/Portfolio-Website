@@ -1,7 +1,7 @@
 # Madhesh H — Personal Portfolio 🔥
 **Live:** https://madhesh.vercel.app/
 
-⭐ Star me on GitHub — it helps!
+⭐ Star me on  — it helps!
 
 ---
 
@@ -24,7 +24,7 @@
 ⚡️ Typing animation  
 ⚡️ **Admin panel — update all content without touching code**  
 ⚡️ JSON-driven — all content lives in one file  
-⚡️ Easy to deploy on Vercel, Netlify, or GitHub Pages  
+⚡️ Easy to deploy on Vercel, Netlify, or  Pages  
 
 ---
 
@@ -86,14 +86,14 @@ Edit in admin.html  →  Download portfolio-data.json  →  Replace file in fold
 | About | Bio paragraphs, birthday, location, email, phone, ORCID, ResearchGate |
 | Research | IEEE papers — titles, years, links |
 | Experience | Roles, organizations, periods, bullet points |
-| Projects | Images, tags, descriptions, GitHub links |
+| Projects | Images, tags, descriptions,  links |
 | Certifications | Badge images, names, issuers, certificate pages |
-| Awards | Emoji, titles, LinkedIn/Drive links |
+| Awards | Emoji, titles, /Drive links |
 | Skills | Categories and skill chips with optional icons |
 | Education | Institution, degree, period, logo, courses |
 | Online Works | Courses, badges, platforms, certificates |
-| Links | GitHub, IEEE, Credly, LeetCode, and more |
-| Contact | Intro text, location, emails, phone, LinkedIn |
+| Links | , IEEE, Credly, LeetCode, and more |
+| Contact | Intro text, location, emails, phone,  |
 | Site Settings | Nav logo initials, copyright year, IEEE profile URL |
 
 ---
@@ -130,16 +130,16 @@ git clone https://github.com/madddx/portfolio.git
 Open `admin.html` locally, update your details, download the JSON, replace the file.
 
 #### Step 3 — Deploy to Vercel
-- Push the folder to a GitHub repository
+- Push the folder to a  repository
 - Go to [vercel.com](https://vercel.com) → **Add New Project** → Import your repo
 - Vercel auto-detects it as a static site → click **Deploy**
 - Live in ~30 seconds at `https://your-project.vercel.app`
 
-> Also works with **Netlify** (drag & drop at netlify.com/drop) and **GitHub Pages**.
+> Also works with **Netlify** (drag & drop at netlify.com/drop) and ** Pages**.
 
 ### Updating content after deployment
 ```
-Edit in admin.html  →  Download portfolio-data.json  →  Push to GitHub  →  Vercel auto-redeploys
+Edit in admin.html  →  Download portfolio-data.json  →  Push to   →  Vercel auto-redeploys
 ```
 You only ever push one file to update your live site.
 

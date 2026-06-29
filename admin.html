@@ -151,8 +151,8 @@
           <hr class="divider">
           <div class="sub-header">Social Links</div>
           <div class="form-grid g2">
-            <div class="field"><label><i class="fab fa-linkedin" style="color:#0a66c2"></i> LinkedIn URL</label><input id="s-linkedin" /></div>
-            <div class="field"><label><i class="fab fa-github"></i> GitHub URL</label><input id="s-github" /></div>
+            <div class="field"><label><i class="fab fa-" style="color:#0a66c2"></i>  URL</label><input id="s-" /></div>
+            <div class="field"><label><i class="fab fa-github"></i>  URL</label><input id="s-github" /></div>
             <div class="field"><label><i class="fas fa-envelope" style="color:#ea4335"></i> Email</label><input id="s-email" /></div>
             <div class="field"><label><i class="fas fa-graduation-cap" style="color:#4285f4"></i> Google Scholar URL</label><input id="s-scholar" /></div>
             <div class="field"><label><i class="fas fa-id-card" style="color:#a6ce39"></i> ORCID URL</label><input id="s-orcid" /></div>
@@ -265,7 +265,7 @@
             <div class="field"><label>Primary Email</label><input id="c-email" /></div>
             <div class="field"><label>Alt Email</label><input id="c-alt" /></div>
             <div class="field"><label>Phone</label><input id="c-phone" /></div>
-            <div class="field"><label>LinkedIn URL</label><input id="c-li" /></div>
+            <div class="field"><label> URL</label><input id="c-li" /></div>
           </div>
         </div>
       </div>
@@ -283,7 +283,7 @@
             <div class="field">
               <label>Copyright Year</label>
               <input id="m-year" placeholder="2025" />
-              <span class="field-hint">Shown in footer as © 2025 Your Name</span>
+              <span class="field-hint">Shown in footer as © 2025 </span>
             </div>
           </div>
           <div class="field">
@@ -346,7 +346,7 @@ function populate() {
   sv('h-name', h.name); sv('h-label', h.label); sv('h-desc', h.description);
   sv('h-photo', h.profilePhoto||'assets/img/profile.jpg'); sv('h-cardrole', h.cardRole||'Developer · Researcher');
   sv('h-resume', h.resumeLink); sv('h-badges', (h.badges||[]).join(', '));
-  sv('s-linkedin', s.linkedin); sv('s-github', s.github); sv('s-email', s.email);
+  sv('s-', s.); sv('s-github', s.github); sv('s-email', s.email);
   sv('s-scholar', s.scholar); sv('s-orcid', s.orcid); sv('s-ieee', s.ieeeProfile||'');
   previewBadges();
   renderPhrases(h.typedPhrases||[]);
@@ -366,7 +366,7 @@ function populate() {
   renderList('online-list', D.onlineWorks||[], makeOnline);
   renderList('links-list', D.links||[], makeLink);
   sv('c-intro', c.intro); sv('c-loc', c.location); sv('c-email', c.email);
-  sv('c-alt', c.altEmail); sv('c-phone', c.phone); sv('c-li', c.linkedin);
+  sv('c-alt', c.altEmail); sv('c-phone', c.phone); sv('c-li', c.);
   sv('m-initials', m.navInitials||'MH'); sv('m-year', m.copyrightYear||'2025');
   sv('m-ieee', m.ieeeProfileUrl||'');
   updatePreview();
@@ -410,7 +410,7 @@ function addExperience(){const el=document.getElementById('experience-list');el.
 function addBullet(btn){const bc=btn.previousElementSibling;const d=document.createElement('div');d.className='bullet-item';d.innerHTML=`<textarea data-b rows="2"></textarea><button class="bdel" onclick="this.closest('.bullet-item').remove()"><i class="fas fa-minus-circle"></i></button>`;bc.appendChild(d);d.querySelector('textarea').focus();}
 
 // ─── PROJECTS ───
-function makeProject(p,i){const c=document.createElement('div');c.className='card item';c.innerHTML=`<div class="card-header"><div style="display:flex;align-items:center;gap:8px"><div class="card-num">${i+1}</div><span class="card-title">${q(p.title||'New Project')}</span></div><button class="btn btn-danger btn-sm" onclick="this.closest('.item').remove()"><i class="fas fa-trash"></i></button></div><div class="form-grid g2"><div class="field"><label>Title</label><input data-f="title" value="${q(p.title||'')}"/></div><div class="field"><label>Image Path</label><input data-f="img" value="${q(p.img||'')}" placeholder="assets/img/project/..."/></div><div class="field"><label>Tags (comma-separated)</label><input data-f="tags" value="${q((p.tags||[]).join(', '))}"/></div><div class="field"><label>GitHub / Details Link</label><input data-f="link" value="${q(p.link||'')}"/></div></div><div class="field" style="margin-top:12px"><label>Description</label><textarea data-f="desc" rows="3">${q(p.desc||'')}</textarea></div>`;return c;}
+function makeProject(p,i){const c=document.createElement('div');c.className='card item';c.innerHTML=`<div class="card-header"><div style="display:flex;align-items:center;gap:8px"><div class="card-num">${i+1}</div><span class="card-title">${q(p.title||'New Project')}</span></div><button class="btn btn-danger btn-sm" onclick="this.closest('.item').remove()"><i class="fas fa-trash"></i></button></div><div class="form-grid g2"><div class="field"><label>Title</label><input data-f="title" value="${q(p.title||'')}"/></div><div class="field"><label>Image Path</label><input data-f="img" value="${q(p.img||'')}" placeholder="assets/img/project/..."/></div><div class="field"><label>Tags (comma-separated)</label><input data-f="tags" value="${q((p.tags||[]).join(', '))}"/></div><div class="field"><label> / Details Link</label><input data-f="link" value="${q(p.link||'')}"/></div></div><div class="field" style="margin-top:12px"><label>Description</label><textarea data-f="desc" rows="3">${q(p.desc||'')}</textarea></div>`;return c;}
 function addProject(){const el=document.getElementById('projects-list');el.appendChild(makeProject({},el.querySelectorAll('.item').length));}
 
 // ─── CERTIFICATIONS ───
@@ -447,7 +447,7 @@ function collect() {
       label: c.querySelector('[data-s="lbl"]').value
     })),
     badges: gv('h-badges').split(',').map(s=>s.trim()).filter(Boolean),
-    socials: { linkedin:gv('s-linkedin'), github:gv('s-github'), email:gv('s-email'), scholar:gv('s-scholar'), orcid:gv('s-orcid'), ieeeProfile:gv('s-ieee') }
+    socials: { :gv('s-'), github:gv('s-github'), email:gv('s-email'), scholar:gv('s-scholar'), orcid:gv('s-orcid'), ieeeProfile:gv('s-ieee') }
   };
   D.about = { bio1:gv('a-bio1'), bio2:gv('a-bio2'), interests: D.about?.interests||[], details:{ birthday:gv('a-bday'), location:gv('a-loc'), email:gv('a-email'), phone:gv('a-phone'), orcid:gv('a-orcid'), researchgate:gv('a-rg') } };
   D.research = cList('research-list', c=>({ year:f(c,'year'), title:f(c,'title'), link:f(c,'link') }));
@@ -459,7 +459,7 @@ function collect() {
   D.education = { institution:gv('e-name'), institutionLink:gv('e-link'), degree:gv('e-degree'), period:gv('e-period'), logoImg:gv('e-logo')||'assets/img/education/srm.png', courses:gv('e-courses').split(',').map(s=>s.trim()).filter(Boolean) };
   D.onlineWorks = cList('online-list', c=>({ img:f(c,'img'), title:f(c,'title'), type:f(c,'type'), link:f(c,'link') }));
   D.links = cList('links-list', c=>({ icon:f(c,'icon'), title:f(c,'title'), desc:f(c,'desc'), url:f(c,'url') }));
-  D.contact = { intro:gv('c-intro'), location:gv('c-loc'), email:gv('c-email'), altEmail:gv('c-alt'), phone:gv('c-phone'), linkedin:gv('c-li') };
+  D.contact = { intro:gv('c-intro'), location:gv('c-loc'), email:gv('c-email'), altEmail:gv('c-alt'), phone:gv('c-phone'), :gv('c-li') };
   D.meta = { navInitials:gv('m-initials')||'MH', copyrightYear:gv('m-year')||'2025', ieeeProfileUrl:gv('m-ieee') };
 }
 function cList(id, extractor) { return [...document.getElementById(id).querySelectorAll('.item')].map(extractor); }

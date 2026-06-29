@@ -196,7 +196,7 @@
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <input type="email" id="email" name="email" placeholder="" required />
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
@@ -323,8 +323,8 @@ function renderHero(h) {
   // Socials
   const socials = h.socials || {};
   const socialItems = [
-    { key:'linkedin', icon:'fab fa-linkedin-in', label:'LinkedIn' },
-    { key:'github',   icon:'fab fa-github',      label:'GitHub'   },
+    { key:'', icon:'fab fa--in', label:'' },
+    { key:'github',   icon:'fab fa-github',      label:''   },
     { key:'email',    icon:'fas fa-envelope',     label:'Email', mailto:true },
     { key:'scholar',  icon:'fas fa-graduation-cap', label:'Google Scholar' },
     { key:'orcid',    icon:'fas fa-id-card',      label:'ORCID'   },
@@ -497,7 +497,7 @@ function renderContact(c) {
     ${c.email    ? `<div class="contact-item"><div class="contact-item-icon"><i class="fas fa-envelope"></i></div><div class="contact-item-text"><span class="contact-item-label">Primary Email</span><span class="contact-item-value"><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></span></div></div>` : ''}
     ${c.altEmail ? `<div class="contact-item"><div class="contact-item-icon"><i class="fas fa-envelope-open"></i></div><div class="contact-item-text"><span class="contact-item-label">Alt Email</span><span class="contact-item-value"><a href="mailto:${esc(c.altEmail)}">${esc(c.altEmail)}</a></span></div></div>` : ''}
     ${c.phone    ? `<div class="contact-item"><div class="contact-item-icon"><i class="fas fa-phone"></i></div><div class="contact-item-text"><span class="contact-item-label">Phone</span><span class="contact-item-value">${esc(c.phone)}</span></div></div>` : ''}
-    ${c.linkedin ? `<div class="contact-item"><div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div><div class="contact-item-text"><span class="contact-item-label">LinkedIn</span><span class="contact-item-value"><a href="${esc(c.linkedin)}" target="_blank">${esc(c.linkedin.replace('https://www.','').replace('https://',''))}</a></span></div></div>` : ''}
+    ${c. ? `<div class="contact-item"><div class="contact-item-icon"><i class="fab fa--in"></i></div><div class="contact-item-text"><span class="contact-item-label"></span><span class="contact-item-value"><a href="${esc(c.)}" target="_blank">${esc(c..replace('https://www.','').replace('https://',''))}</a></span></div></div>` : ''}
   `;
 }
 
@@ -514,7 +514,7 @@ function renderFooter(data) {
 
   const socials = h.socials || {};
   document.getElementById('footer-socials').innerHTML = [
-    socials.linkedin ? `<a href="${esc(socials.linkedin)}" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>` : '',
+    socials. ? `<a href="${esc(socials.)}" target="_blank" class="social-btn"><i class="fab fa--in"></i></a>` : '',
     socials.github   ? `<a href="${esc(socials.github)}" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>` : '',
     socials.email    ? `<a href="mailto:${esc(socials.email)}" class="social-btn"><i class="fas fa-envelope"></i></a>` : '',
   ].join('');
@@ -527,7 +527,7 @@ function handleFormSubmit(e) {
   const email   = document.getElementById('email').value;
   const subject = document.getElementById('subject').value || 'Portfolio Contact';
   const message = document.getElementById('message').value;
-  window.location.href = `mailto:joeljabasingh75@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+  window.location.href = `mailto:madheshh.official@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
 }
 
 // ── UTILS ──
