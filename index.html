@@ -1,1 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Joel Singh | Robotics & Automation Engineer Portfolio</title>
+  <meta name="title" content="Joel Singh | Robotics & Automation Engineer Portfolio">
+  <meta name="description" content="Professional portfolio of Joel Singh, a Robotics & Automation Engineering student specializing in ROS2, autonomous robotics, industrial automation, embedded systems, computer vision, and AI.">
+  <meta name="keywords" content="Joel Singh, Robotics Engineer, Automation Engineer, ROS2, Gazebo, Embedded Systems, ESP32, PLC, Computer Vision, AI, Deep Learning, Autonomous Robots">
+  <meta name="author" content="Joel Singh">
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joelsingh.github.io/">
+  <meta property="og:title" content="Joel Singh | Robotics & Automation Engineer Portfolio">
+  <meta property="og:description" content="Professional engineering portfolio showcasing ROS2 autonomous robots, deep learning MRI classification, industrial PLC automation, and embedded systems.">
+  <meta property="og:image" content="images/project1_amr.svg">
+
+  <!-- Favicon Icon Placeholder -->
+  <link rel="icon" type="image/svg+xml" href="images/profile.svg">
+
+  <!-- Font Awesome CDN for Engineering & Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fas fa-robot"></i></div>
+        JOEL <span>SINGH</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-pulse"></span>
+            AVAILABLE FOR ENGINEERING ROLES & INTERNSHIPS
+          </div>
+
+          <h1 class="hero-name">JOEL SINGH</h1>
+          <div class="hero-title">
+            <span id="heroTypingText"></span>
+          </div>
+
+          <blockquote class="hero-tagline">
+            "Building intelligent robotic systems by combining robotics, automation, embedded systems, and software."
+          </blockquote>
+
+          <div class="hero-interests">
+            <span class="interest-tag"><i class="fas fa-robot"></i> Robotics</span>
+            <span class="interest-tag"><i class="fas fa-route"></i> Autonomous Systems</span>
+            <span class="interest-tag"><i class="fas fa-cogs"></i> ROS2 & Nav2</span>
+            <span class="interest-tag"><i class="fas fa-industry"></i> Industrial Automation</span>
+            <span class="interest-tag"><i class="fas fa-microchip"></i> Embedded Systems</span>
+            <span class="interest-tag"><i class="fas fa-eye"></i> Computer Vision</span>
+            <span class="interest-tag"><i class="fas fa-brain"></i> AI / Machine Learning</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-project-diagram"></i> View My Projects
+            </a>
+            <!-- REPLACE WITH YOUR RESUME FILE -->
+            <a href="assets/Joel_Singh_Resume.pdf" download target="_blank" class="btn btn-outline">
+              <i class="fas fa-file-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="social-links">
+            <!-- REPLACE WITH YOUR GITHUB LINK -->
+            <a href="https://github.com/joelsingh" target="_blank" class="social-icon" title="GitHub Profile" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <!-- REPLACE WITH YOUR LINKEDIN LINK -->
+            <a href="https://linkedin.com/in/joelsingh" target="_blank" class="social-icon" title="LinkedIn Profile" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <!-- REPLACE WITH YOUR EMAIL -->
+            <a href="mailto:joel.singh.robotics@gmail.com" class="social-icon" title="Send Email" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <canvas id="heroCanvas"></canvas>
+          <div class="canvas-overlay-hud">
+            <span class="hud-tag"><i class="fas fa-crosshairs"></i> LIDAR_SCAN: ACTIVE</span>
+            <span class="hud-tag"><i class="fas fa-project-diagram"></i> KINEMATICS: 2-DOF</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT ME SECTION
+         ========================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">BACKGROUND & PROFILE</span>
+          <h2 class="section-title">About <span>Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content">
+            <p>
+              I am a <strong>B.Tech Robotics & Automation Engineering student</strong> with hands-on experience in robotics simulation, ROS2, autonomous mobile robots, embedded systems, industrial automation, computer vision, and machine learning.
+            </p>
+            <p>
+              I enjoy designing systems that combine hardware, software, sensors, control systems, and intelligent algorithms to solve real-world engineering problems.
+            </p>
+
+            <div class="about-highlights">
+              <span class="about-pill"><i class="fas fa-check-circle"></i> Autonomous Robotics</span>
+              <span class="about-pill"><i class="fas fa-check-circle"></i> Mobile Robotics & SLAM</span>
+              <span class="about-pill"><i class="fas fa-check-circle"></i> ROS2 Architecture</span>
+              <span class="about-pill"><i class="fas fa-check-circle"></i> Robot Simulation</span>
+              <span class="about-pill"><i class="fas fa-check-circle"></i> Industrial Automation & PLC</span>
+              <span class="about-pill"><i class="fas fa-check-circle"></i> Embedded Systems</span>
+              <span class="about-pill"><i class="fas fa-check-circle"></i> Computer Vision</span>
+              <span class="about-pill"><i class="fas fa-check-circle"></i> AI / Machine Learning</span>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-num" data-target="8.08">0.00</div>
+              <div class="stat-label">CGPA (B.Tech Robotics & Automation)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-target="6">0</div>
+              <div class="stat-label">Complex Engineering Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-target="6">0</div>
+              <div class="stat-label">Industry Certifications</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-target="783">0</div>
+              <div class="stat-label">LeetCode Global Rank</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TECHNICAL SKILLS SECTION
+         ========================================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">ENGINEERING CAPABILITIES</span>
+          <h2 class="section-title">Technical <span>Skills</span></h2>
+          <p class="section-desc">Comprehensive toolset spanning robotics software, embedded hardware, industrial automation controls, and deep learning frameworks.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Robotics & Automation -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-robot"></i></div>
+              <h3 class="category-title">Robotics & Simulation</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-item"><span class="skill-dot"></span> ROS2</span>
+              <span class="skill-item"><span class="skill-dot"></span> Robot Operating System</span>
+              <span class="skill-item"><span class="skill-dot"></span> Nav2</span>
+              <span class="skill-item"><span class="skill-dot"></span> SLAM</span>
+              <span class="skill-item"><span class="skill-dot"></span> Gazebo</span>
+              <span class="skill-item"><span class="skill-dot"></span> RoboDK</span>
+              <span class="skill-item"><span class="skill-dot"></span> CoppeliaSim</span>
+              <span class="skill-item"><span class="skill-dot"></span> Autonomous Mobile Robots</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-code"></i></div>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-item"><span class="skill-dot"></span> Python</span>
+              <span class="skill-item"><span class="skill-dot"></span> C++</span>
+              <span class="skill-item"><span class="skill-dot"></span> C</span>
+              <span class="skill-item"><span class="skill-dot"></span> HTML5</span>
+              <span class="skill-item"><span class="skill-dot"></span> CSS3</span>
+              <span class="skill-item"><span class="skill-dot"></span> JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Embedded Systems -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-microchip"></i></div>
+              <h3 class="category-title">Embedded Systems & IoT</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-item"><span class="skill-dot"></span> Arduino</span>
+              <span class="skill-item"><span class="skill-dot"></span> ESP32</span>
+              <span class="skill-item"><span class="skill-dot"></span> Sensors & Actuators</span>
+              <span class="skill-item"><span class="skill-dot"></span> Embedded C/C++</span>
+              <span class="skill-item"><span class="skill-dot"></span> IoT Systems</span>
+              <span class="skill-item"><span class="skill-dot"></span> Microcontrollers</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Industrial Automation -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-industry"></i></div>
+              <h3 class="category-title">Industrial Automation</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-item"><span class="skill-dot"></span> PLC Programming</span>
+              <span class="skill-item"><span class="skill-dot"></span> Ladder Logic</span>
+              <span class="skill-item"><span class="skill-dot"></span> Automation Systems</span>
+              <span class="skill-item"><span class="skill-dot"></span> Timers & Counters</span>
+              <span class="skill-item"><span class="skill-dot"></span> Hardware Interlocks</span>
+              <span class="skill-item"><span class="skill-dot"></span> Industrial Controls</span>
+            </div>
+          </div>
+
+          <!-- Category 5: AI / Machine Learning -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-brain"></i></div>
+              <h3 class="category-title">AI & Computer Vision</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-item"><span class="skill-dot"></span> TensorFlow</span>
+              <span class="skill-item"><span class="skill-dot"></span> Keras</span>
+              <span class="skill-item"><span class="skill-dot"></span> OpenCV</span>
+              <span class="skill-item"><span class="skill-dot"></span> Machine Learning</span>
+              <span class="skill-item"><span class="skill-dot"></span> Deep Learning</span>
+              <span class="skill-item"><span class="skill-dot"></span> CNN Architectures</span>
+              <span class="skill-item"><span class="skill-dot"></span> Computer Vision</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Engineering Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-drafting-compass"></i></div>
+              <h3 class="category-title">Engineering Tools</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-item"><span class="skill-dot"></span> MATLAB</span>
+              <span class="skill-item"><span class="skill-dot"></span> Simulink</span>
+              <span class="skill-item"><span class="skill-dot"></span> Simscape</span>
+              <span class="skill-item"><span class="skill-dot"></span> Fusion 360</span>
+              <span class="skill-item"><span class="skill-dot"></span> Proteus</span>
+              <span class="skill-item"><span class="skill-dot"></span> Git & GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURED PROJECTS SECTION
+         ========================================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">PORTFOLIO SHOWCASE</span>
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+          <p class="section-desc">Engineering case studies across autonomous robotics, medical deep learning, embedded systems, and industrial simulation.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div id="projectFilters" class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="robotics">Robotics</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+          <button class="filter-btn" data-filter="embedded">Embedded</button>
+          <button class="filter-btn" data-filter="aiml">AI / ML</button>
+          <button class="filter-btn" data-filter="simulation">Simulation</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Autonomous Warehouse AMR -->
+          <div class="project-card" data-category="robotics">
+            <div class="project-img-wrap">
+              <img src="images/project1_amr.svg" alt="Autonomous Warehouse Mobile Robot" class="project-img" loading="lazy">
+              <span class="project-badge-tag">ROS2 & Nav2</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Autonomous Warehouse Mobile Robot</h3>
+              <p class="project-desc">
+                Autonomous mobile robot simulation for warehouse navigation using ROS2. Integrates mapping, localization, path planning, obstacle avoidance, and visualization.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ROS2</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Gazebo</span>
+                <span class="tech-tag">Nav2</span>
+                <span class="tech-tag">SLAM Toolbox</span>
+                <span class="tech-tag">RViz2</span>
+              </div>
+              <div class="project-highlights-box">
+                <strong>My Contribution:</strong> Software development, ROS2 URDF model setup, SLAM Toolbox map generation, Nav2 costmap tuning.
+              </div>
+              <div class="project-footer">
+                <!-- REPLACE WITH YOUR GITHUB LINK -->
+                <a href="https://github.com/joelsingh/ros2-warehouse-amr" target="_blank" class="btn btn-outline" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <button class="btn btn-primary btn-view-project" data-id="1">
+                  <i class="fas fa-search-plus"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: MRI Brain Tumor Detection -->
+          <div class="project-card" data-category="aiml">
+            <div class="project-img-wrap">
+              <img src="images/project2_mri.svg" alt="MRI Brain Tumor Detection Using Deep Learning" class="project-img" loading="lazy">
+              <span class="project-badge-tag">Deep Learning / CNN</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MRI Brain Tumor Detection (Deep Learning)</h3>
+              <p class="project-desc">
+                Academic research project evaluating CNN architectures (Xception, InceptionResNetV2, VGG16/19) for 4-class MRI brain tumor classification across 6,368 scans.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">CNN</span>
+                <span class="tech-tag">Xception</span>
+              </div>
+              <div class="project-highlights-box">
+                <strong>Model Performance:</strong> Xception achieved 99.88% Train, 99.08% Val, and 98.17% Test accuracy on unseen dataset.
+              </div>
+              <div class="project-footer">
+                <!-- REPLACE WITH YOUR GITHUB LINK -->
+                <a href="https://github.com/joelsingh/mri-brain-tumor-dl" target="_blank" class="btn btn-outline" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <button class="btn btn-primary btn-view-project" data-id="2">
+                  <i class="fas fa-search-plus"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Smart Irrigation and Water Management -->
+          <div class="project-card" data-category="embedded">
+            <div class="project-img-wrap">
+              <img src="images/project3_irrigation.svg" alt="Smart Irrigation & Water Management System" class="project-img" loading="lazy">
+              <span class="project-badge-tag">ESP32 & IoT</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Irrigation & Water Management</h3>
+              <p class="project-desc">
+                Automated ESP32-based irrigation & water tank management. Controls borewell pump dynamically between 30% trigger level and 80-85% cut-off limit.
+              </p>
+
+              <!-- Architecture Diagram Callout -->
+              <div class="arch-diagram-card">
+                <div class="water-tank-diagram">
+                  <div class="tank-visual">
+                    <div class="tank-level-line level-85">85% STOP</div>
+                    <div class="tank-level-line level-30">30% START</div>
+                    <div class="tank-water"></div>
+                  </div>
+                  <div class="motor-status-indicator">
+                    <span class="status-dot active"></span> Tank Hysteresis Logic
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">Sensors</span>
+                <span class="tech-tag">Embedded C++</span>
+                <span class="tech-tag">IoT</span>
+              </div>
+              <div class="project-footer">
+                <!-- REPLACE WITH YOUR GITHUB LINK -->
+                <a href="https://github.com/joelsingh/smart-irrigation-esp32" target="_blank" class="btn btn-outline" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <button class="btn btn-primary btn-view-project" data-id="3">
+                  <i class="fas fa-search-plus"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Smart Waste Segregation Dustbin -->
+          <div class="project-card" data-category="automation">
+            <div class="project-img-wrap">
+              <img src="images/project4_dustbin.svg" alt="Smart Waste Segregation Dustbin" class="project-img" loading="lazy">
+              <span class="project-badge-tag">Smart Automation</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Waste Segregation Dustbin</h3>
+              <p class="project-desc">
+                Sensor-based solid waste management system designed to detect and sort waste into Plastic, Metal, E-Waste, and General categories.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">Proximity Sensors</span>
+                <span class="tech-tag">Embedded Systems</span>
+                <span class="tech-tag">IoT</span>
+              </div>
+              <div class="project-highlights-box">
+                <strong>Feature:</strong> Inductive/capacitive sensor fusion with automated servo chute routing and real-time app telemetry.
+              </div>
+              <div class="project-footer">
+                <!-- REPLACE WITH YOUR GITHUB LINK -->
+                <a href="https://github.com/joelsingh/smart-waste-dustbin" target="_blank" class="btn btn-outline" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <button class="btn btn-primary btn-view-project" data-id="4">
+                  <i class="fas fa-search-plus"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Smart Library Seat Allocation -->
+          <div class="project-card" data-category="embedded">
+            <div class="project-img-wrap">
+              <img src="images/project5_library.svg" alt="Smart Library Seat Allocation System" class="project-img" loading="lazy">
+              <span class="project-badge-tag">PIR / IR IoT</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Library Seat Allocation System</h3>
+              <p class="project-desc">
+                Seat occupancy detection system utilizing PIR and IR sensor fusion to track live desk availability and optimize HVAC/lighting energy consumption.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">PIR Sensors</span>
+                <span class="tech-tag">IR Sensors</span>
+                <span class="tech-tag">Relay Interlocks</span>
+                <span class="tech-tag">MQTT</span>
+              </div>
+              <div class="project-highlights-box">
+                <strong>Outcome:</strong> Reduced study area idle energy waste by ~28% through dynamic presence-based power shutdown.
+              </div>
+              <div class="project-footer">
+                <!-- REPLACE WITH YOUR GITHUB LINK -->
+                <a href="https://github.com/joelsingh/smart-library-energy-system" target="_blank" class="btn btn-outline" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <button class="btn btn-primary btn-view-project" data-id="5">
+                  <i class="fas fa-search-plus"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Robotic Pick-and-Place Simulation -->
+          <div class="project-card" data-category="simulation">
+            <div class="project-img-wrap">
+              <img src="images/project6_fanuc.svg" alt="Robotic Pick-and-Place Simulation" class="project-img" loading="lazy">
+              <span class="project-badge-tag">RoboDK & Industrial Arm</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Robotic Pick-and-Place Simulation</h3>
+              <p class="project-desc">
+                Industrial robotic arm cell simulation featuring FANUC S-430iL 6-axis manipulator and OnRobot VGP20 vacuum gripper for automated conveyor handling.
+              </p>
+
+              <!-- Workflow Sequence Pipeline -->
+              <div class="workflow-pipeline">
+                <span class="pipeline-step">Detect</span>
+                <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+                <span class="pipeline-step">Position</span>
+                <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+                <span class="pipeline-step">Pick</span>
+                <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+                <span class="pipeline-step">Transfer</span>
+                <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+                <span class="pipeline-step">Place</span>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-tag">RoboDK</span>
+                <span class="tech-tag">FANUC S-430iL</span>
+                <span class="tech-tag">OnRobot VGP20</span>
+                <span class="tech-tag">Python API</span>
+              </div>
+              <div class="project-footer">
+                <!-- REPLACE WITH YOUR GITHUB LINK -->
+                <a href="https://github.com/joelsingh/robodk-fanuc-pick-and-place" target="_blank" class="btn btn-outline" aria-label="GitHub Repository">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <button class="btn btn-primary btn-view-project" data-id="6">
+                  <i class="fas fa-search-plus"></i> View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         WORK EXPERIENCE / INTERNSHIP SECTION
+         ========================================== -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">CAREER HISTORY</span>
+          <h2 class="section-title">Work <span>Experience</span></h2>
+          <p class="section-desc">Practical exposure to operational environments, technical execution, and engineering workflows.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Engineering Trainee / Intern</h3>
+                  <div class="company-name"><i class="fas fa-building"></i> Prime Roads</div>
+                </div>
+                <span class="duration-badge"><i class="far fa-calendar-alt"></i> June 2025 – August 2025</span>
+              </div>
+
+              <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                Gained practical exposure to operational workflows, technical learning, and engineering equipment maintenance.
+              </p>
+
+              <h4 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.5rem;">Key Responsibilities & Contributions:</h4>
+              <ul class="case-study-list" style="margin-bottom: 1.2rem;">
+                <li>Observed and documented industrial equipment operational parameters and maintenance protocols.</li>
+                <li>Assisted senior engineers in troubleshooting control panels and sensor interface signals.</li>
+                <li>Compiled operational data logs and contributed to workflow optimization reports.</li>
+                <li>Applied standard safety protocols and engineering best practices across production units.</li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-tag">Industrial Equipment</span>
+                <span class="tech-tag">Operational Workflows</span>
+                <span class="tech-tag">Quality Assurance</span>
+                <span class="tech-tag">Technical Documentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATIONS SECTION
+         ========================================== -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">VERIFIED CREDENTIALS</span>
+          <h2 class="section-title">Certifications & <span>Courses</span></h2>
+          <p class="section-desc">Continuous professional development across robotics control, PLCs, software engineering, and machine learning.</p>
+        </div>
+
+        <!-- Certificate Filter Tabs -->
+        <div id="certFilters" class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Certificates</button>
+          <button class="filter-btn" data-filter="robotics">Robotics</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1: J&J MedTech -->
+          <div class="cert-card" data-category="robotics">
+            <!-- REPLACE WITH YOUR CERTIFICATE FILE -->
+            <img src="certificates/cert_jnj.svg" alt="Robotics & Controls Certificate" class="cert-preview-img">
+            <div class="cert-body">
+              <h3 class="cert-title">Robotics & Controls Virtual Experience</h3>
+              <div class="cert-issuer">Johnson & Johnson MedTech — Forage</div>
+              <div class="cert-date"><i class="far fa-calendar-alt"></i> September 2025</div>
+              <div class="cert-footer">
+                <button class="btn btn-outline btn-view-cert" data-title="Robotics & Controls - Johnson & Johnson" data-img="certificates/cert_jnj.svg">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2: AutomateX PLC -->
+          <div class="cert-card" data-category="automation">
+            <!-- REPLACE WITH YOUR CERTIFICATE FILE -->
+            <img src="certificates/cert_plc.svg" alt="AutomateX PLC Certificate" class="cert-preview-img">
+            <div class="cert-body">
+              <h3 class="cert-title">AutomateX: Mastering PLCs for Industrial Automation</h3>
+              <div class="cert-issuer">Lovely Professional University</div>
+              <div class="cert-date"><i class="far fa-calendar-alt"></i> July 2025</div>
+              <div class="cert-footer">
+                <button class="btn btn-outline btn-view-cert" data-title="AutomateX PLC Certification - LPU" data-img="certificates/cert_plc.svg">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3: Google Python -->
+          <div class="cert-card" data-category="programming">
+            <!-- REPLACE WITH YOUR CERTIFICATE FILE -->
+            <img src="certificates/cert_python_google.svg" alt="Google Python Certificate" class="cert-preview-img">
+            <div class="cert-body">
+              <h3 class="cert-title">Crash Course on Python</h3>
+              <div class="cert-issuer">Google — Coursera</div>
+              <div class="cert-date"><i class="far fa-calendar-alt"></i> March 2024</div>
+              <div class="cert-footer">
+                <button class="btn btn-outline btn-view-cert" data-title="Crash Course on Python - Google" data-img="certificates/cert_python_google.svg">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4: GFG C++ -->
+          <div class="cert-card" data-category="programming">
+            <!-- REPLACE WITH YOUR CERTIFICATE FILE -->
+            <img src="certificates/cert_gfg_cpp.svg" alt="GeeksforGeeks C++ Certificate" class="cert-preview-img">
+            <div class="cert-body">
+              <h3 class="cert-title">Complete Interview Preparation — C++</h3>
+              <div class="cert-issuer">GeeksforGeeks</div>
+              <div class="cert-date"><i class="far fa-calendar-alt"></i> 2024</div>
+              <div class="cert-footer">
+                <button class="btn btn-outline btn-view-cert" data-title="Interview Prep C++ - GeeksforGeeks" data-img="certificates/cert_gfg_cpp.svg">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 5: Flutter -->
+          <div class="cert-card" data-category="programming">
+            <!-- REPLACE WITH YOUR CERTIFICATE FILE -->
+            <img src="certificates/cert_flutter.svg" alt="Flutter Certificate" class="cert-preview-img">
+            <div class="cert-body">
+              <h3 class="cert-title">Development in Flutter</h3>
+              <div class="cert-issuer">Programming Pathsala</div>
+              <div class="cert-date"><i class="far fa-calendar-alt"></i> 2024</div>
+              <div class="cert-footer">
+                <button class="btn btn-outline btn-view-cert" data-title="Development in Flutter - Programming Pathsala" data-img="certificates/cert_flutter.svg">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 6: Udemy Python -->
+          <div class="cert-card" data-category="programming">
+            <!-- REPLACE WITH YOUR CERTIFICATE FILE -->
+            <img src="certificates/cert_udemy_python.svg" alt="100 Days of Code Python Certificate" class="cert-preview-img">
+            <div class="cert-body">
+              <h3 class="cert-title">100 Days of Code: The Complete Python Pro</h3>
+              <div class="cert-issuer">Udemy</div>
+              <div class="cert-date"><i class="far fa-calendar-alt"></i> 2023</div>
+              <div class="cert-footer">
+                <button class="btn btn-outline btn-view-cert" data-title="100 Days of Code Python Pro - Udemy" data-img="certificates/cert_udemy_python.svg">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ACHIEVEMENTS SECTION
+         ========================================== -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">HONORS & COMPETITIONS</span>
+          <h2 class="section-title">Achievements & <span>Recognition</span></h2>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1: LeetCode -->
+          <div class="achievement-card">
+            <div class="achievement-badge-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="achievement-rank">Global Rank 783</div>
+            <h3 class="achievement-title">LeetCode Biweekly Contest 96</h3>
+            <p class="achievement-desc">Achieved top tier global ranking among 21,000+ competitive programming participants worldwide.</p>
+          </div>
+
+          <!-- Achievement 2: CodeChef -->
+          <div class="achievement-card">
+            <div class="achievement-badge-icon"><i class="fas fa-terminal"></i></div>
+            <div class="achievement-rank">Rank 557</div>
+            <h3 class="achievement-title">CodeChef Starters 76 (Div 3)</h3>
+            <p class="achievement-desc">Ranked 557 out of 4,000+ participating algorithmic programmers.</p>
+          </div>
+
+          <!-- Achievement 3: Academic -->
+          <div class="achievement-card">
+            <div class="achievement-badge-icon"><i class="fas fa-award"></i></div>
+            <div class="achievement-rank">Top 10%</div>
+            <h3 class="achievement-title">Dean's Honor Roll</h3>
+            <p class="achievement-desc">Recognized among the Top 10% academic students in Robotics & Automation Engineering.</p>
+          </div>
+
+          <!-- Achievement 4: Hackathon -->
+          <div class="achievement-card">
+            <div class="achievement-badge-icon"><i class="fas fa-trophy"></i></div>
+            <div class="achievement-rank">3rd Rank</div>
+            <h3 class="achievement-title">HACKOVERFLOW 5.0 (NIT Durgapur)</h3>
+            <p class="achievement-desc">Secured podium 3rd position in national level hackathon competition at NIT Durgapur.</p>
+          </div>
+
+          <!-- Achievement 5: Letter of Appreciation -->
+          <div class="achievement-card">
+            <div class="achievement-badge-icon"><i class="fas fa-certificate"></i></div>
+            <div class="achievement-rank">Honorable Letter</div>
+            <h3 class="achievement-title">Appreciation from Mr. Rajnath Singh</h3>
+            <p class="achievement-desc">Received an official Letter of Appreciation from Honorable Union Minister Mr. Rajnath Singh for exceptional performance in AISSCE.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION SECTION
+         ========================================== -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">ACADEMIC QUALIFICATION</span>
+          <h2 class="section-title">My <span>Education</span></h2>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-left">
+            <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--cyan); margin-bottom: 1rem;"></i>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main);">Lovely Professional University</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Punjab, India</p>
+            <div class="edu-cgpa-box">
+              <div class="edu-cgpa-val">8.08</div>
+              <div class="edu-cgpa-lbl">Cumulative CGPA</div>
+            </div>
+          </div>
+
+          <div class="edu-right">
+            <span class="duration-badge" style="margin-bottom: 0.75rem; display: inline-block;">Bachelor of Technology (B.Tech)</span>
+            <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--text-main); margin-bottom: 1rem;">Robotics & Automation Engineering</h3>
+            
+            <h4 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.5rem;">Core Relevant Coursework & Systems:</h4>
+            <div class="skills-tags">
+              <span class="skill-item"><span class="skill-dot"></span> Robotics Kinematics & Dynamics</span>
+              <span class="skill-item"><span class="skill-dot"></span> Industrial Automation & PLC</span>
+              <span class="skill-item"><span class="skill-dot"></span> Embedded Systems & Microcontrollers</span>
+              <span class="skill-item"><span class="skill-dot"></span> Control Systems & Feedback Loops</span>
+              <span class="skill-item"><span class="skill-dot"></span> Object-Oriented Programming (C++/Python)</span>
+              <span class="skill-item"><span class="skill-dot"></span> Computer Vision & Artificial Intelligence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         RESUME DOWNLOAD SECTION
+         ========================================== -->
+    <section id="resume">
+      <div class="container">
+        <div class="resume-banner">
+          <h3>Interested in my complete engineering profile?</h3>
+          <p>Download my updated detailed resume outlining technical projects, ROS2 expertise, coursework, and competitive achievements.</p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <!-- REPLACE WITH YOUR RESUME FILE -->
+            <a href="assets/Joel_Singh_Resume.pdf" target="_blank" class="btn btn-primary">
+              <i class="fas fa-eye"></i> View Resume PDF
+            </a>
+            <!-- REPLACE WITH YOUR RESUME FILE -->
+            <a href="assets/Joel_Singh_Resume.pdf" download class="btn btn-outline">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">GET IN TOUCH</span>
+          <h2 class="section-title">Let's Build <span>Something Intelligent</span></h2>
+          <p class="section-desc">Open for robotics engineering positions, autonomous systems roles, research collaborations, and internship opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-dim);">EMAIL</div>
+                <!-- REPLACE WITH YOUR EMAIL -->
+                <a href="mailto:joel.singh.robotics@gmail.com" style="color: var(--text-main); font-weight: 600; text-decoration: none;">joel.singh.robotics@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-dim);">LINKEDIN</div>
+                <!-- REPLACE WITH YOUR LINKEDIN LINK -->
+                <a href="https://linkedin.com/in/joelsingh" target="_blank" style="color: var(--text-main); font-weight: 600; text-decoration: none;">linkedin.com/in/joelsingh</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-dim);">GITHUB</div>
+                <!-- REPLACE WITH YOUR GITHUB LINK -->
+                <a href="https://github.com/joelsingh" target="_blank" style="color: var(--text-main); font-weight: 600; text-decoration: none;">github.com/joelsingh</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-dim);">PHONE</div>
+                <div style="color: var(--text-main); font-weight: 600;">+91 98765 43210</div>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-dim);">LOCATION</div>
+                <div style="color: var(--text-main); font-weight: 600;">Punjab, India</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with Front-end Validation -->
+          <!-- NOTE: To activate email delivery via Formspree, set form action to: "https://formspree.io/f/YOUR_FORMSPREE_ID" -->
+          <div class="contact-form-wrap">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Mercer" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email Address</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="e.g. alex@engineering.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" class="form-input" placeholder="e.g. Robotics Engineering Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">JOEL SINGH</div>
+      <p style="color: var(--cyan); font-weight: 600; margin-bottom: 0.4rem;">Robotics & Automation Engineer</p>
+      <p class="footer-quote">"Engineering intelligent systems for the real world."</p>
+
+      <div class="footer-links">
+        <!-- REPLACE WITH YOUR GITHUB LINK -->
+        <a href="https://github.com/joelsingh" target="_blank" style="color: var(--text-muted); text-decoration: none;">GitHub</a>
+        <!-- REPLACE WITH YOUR LINKEDIN LINK -->
+        <a href="https://linkedin.com/in/joelsingh" target="_blank" style="color: var(--text-muted); text-decoration: none;">LinkedIn</a>
+        <!-- REPLACE WITH YOUR EMAIL -->
+        <a href="mailto:joel.singh.robotics@gmail.com" style="color: var(--text-muted); text-decoration: none;">Email</a>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 Joel Singh. All Rights Reserved. Built with HTML5, CSS3, and Vanilla JavaScript.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MODAL CONTAINERS
+       ========================================== -->
+  <!-- Project Case Study Detail Modal -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="projectModalTitle" class="modal-title">Project Case Study</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div id="projectModalContent" class="modal-body">
+        <!-- Dynamically populated via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Viewer Modal -->
+  <div id="certModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 700px;">
+      <div class="modal-header">
+        <h3 id="certModalTitle" class="modal-title">Certificate Preview</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <img id="certModalImg" src="" alt="Certificate Preview" style="width: 100%; border-radius: var(--radius-md); margin-bottom: 1.5rem; border: 1px solid var(--border-color);">
+        <a id="certModalDownload" href="#" target="_blank" class="btn btn-primary">
+          <i class="fas fa-external-link-alt"></i> Open Full File / PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Feedback Popup -->
+  <div id="toastNotification" class="toast-notification">
+    <i class="fas fa-check-circle" style="color: var(--accent-emerald); font-size: 1.3rem;"></i>
+    <span id="toastMessage">Action completed successfully.</span>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
