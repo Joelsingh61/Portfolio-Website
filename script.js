@@ -1,5 +1,5 @@
 /* ==========================================================================
-   JOEL SINGH - ROBOTICS & AUTOMATION ENGINEERING PORTFOLIO
+   Joel Jaba Singh - ROBOTICS & AUTOMATION ENGINEERING PORTFOLIO
    Vanilla JavaScript - Core Functionality & Interactive Engines
    ========================================================================== */
 
@@ -9,11 +9,11 @@
 const CONFIG = {
   // REPLACE WITH YOUR ACTUAL LINKS & CONTACT DETAILS
   githubUrl: "https://github.com/joelsingh",         // // REPLACE WITH YOUR GITHUB LINK
-  linkedinUrl: "https://linkedin.com/in/joelsingh",   // // REPLACE WITH YOUR LINKEDIN LINK
-  email: "joel.singh.robotics@gmail.com",            // // REPLACE WITH YOUR EMAIL
-  phone: "+91 98765 43210",                            // // REPLACE WITH YOUR PHONE
+  linkedinUrl: "https://linkedin.com/in/joeljabasingh",   // // REPLACE WITH YOUR LINKEDIN LINK
+  email: "joeljabasingh75@gmail.com",            // // REPLACE WITH YOUR EMAIL
+  phone: "+91 63744 47391",                            // // REPLACE WITH YOUR PHONE
   resumePdf: "assets/Joel_Singh_Resume.pdf",           // // REPLACE WITH YOUR RESUME FILE
-  location: "Punjab, India"
+  location: "Chennai India"
 };
 
 // ==========================================
